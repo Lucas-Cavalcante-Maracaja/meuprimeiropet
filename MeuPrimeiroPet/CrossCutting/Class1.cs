@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Service
+namespace CrossCutting
 {
     public class Class1
     {
