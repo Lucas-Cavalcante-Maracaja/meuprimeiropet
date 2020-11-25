@@ -44,9 +44,9 @@ namespace Service
             
         }
 
-        public async Task<bool> VerifyAccont(LoginDto login)
+        public async Task<User> VerifyAccont(LoginDto login)
         {
-            return await _repository.AnyAsync(l => l.Nome.Equals(login.Usuario) && l.Senha.Equals(login.Senha));
+            return await _repository.FirstOrDefaultAsync(l => l.Nome.Equals(login.Usuario) && l.Senha.Equals(login.Senha));
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Domain.Dto;
+using Domain.Entity;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,7 +9,7 @@ namespace Domain.Interfaces
 {
     public interface IUserService
     {
-        Task<bool> VerifyAccont(LoginDto login);
+        Task<User> VerifyAccont(LoginDto login);
         Task<bool> CadastrarConta(CadastroDto cadastro);
 
     }

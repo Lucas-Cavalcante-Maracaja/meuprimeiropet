@@ -11,5 +11,6 @@ namespace Data.Context
         public MyContext(DbContextOptions<MyContext> options) : base(options) { }
         public DbSet<User> User { get; set; }
         public DbSet<Endereco> Endereco { get; set; }
+        public DbSet<Animal> Animal { get; set; }
     }
 }
